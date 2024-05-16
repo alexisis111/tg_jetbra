@@ -6,7 +6,7 @@ yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
-
+.env
 node_modules
 dist
 dist-ssr
@@ -16,7 +16,6 @@ dist-ssr
 server
 .vscode/*
 !.vscode/extensions.json
-.env
 .idea
 .DS_Store
 *.suo
