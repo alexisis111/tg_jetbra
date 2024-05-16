@@ -1,6 +1,8 @@
 const TelegramBot = require('node-telegram-bot-api');
+require('dotenv').config();
+const token = process.env.TOKEN;
 
-const token = '6680265544:AAFXMW6t9Y0ljToOHZFk_hcxWHlmgdwR_fs';
+
 
 const bot = new TelegramBot(token, { polling: true });
 const webAppUrl = 'https://faq-jetbra.netlify.app';
@@ -163,9 +165,9 @@ bot.on('callback_query', async callbackQuery => {
             '4)3. Без пробелов вставляем эти настройки ->  \n' +
             '--add-opens=java.base/jdk.internal.org.objectweb.asm=ALL-UNNAMED   \n' +
             '--add-opens=java.base/jdk.internal.org.objectweb.asm.tree=ALL-UNNAMED   \n' +
-            '-javaagent:\\Users\\ИМЯ ТВОЕЙ СИСТЕМЫ\\*\\*\\*\\jetbra\\ja-netfilter.jar=jetbrains  \n' +
+            '-javaagent:\\Users\\ТУТ ИМЯ ЮЗЕРА\\ТУТ МЫ КАК РАЗ ДОЛЖНЫ ВСТАВИТЬ СВОЙ ПУТЬ ДО ПАПКИ\\jetbra\\ja-netfilter.jar=jetbrains  \n' +
             'Все дефисыс новой строки!!! \n' +
-            '-javaagent:\\Users\\ИМЯ ТВОЕЙ СИСТЕМЫ\\*\\*\\*\\jetbra\\ja-netfilter.jar=jetbrains  - ТУТ МЫ ВСТАВЛЯЕМ ТОТ ПУТЬ, КОТОРЫЙ КОПИРОВАЛИ В БУФЕР ОБМЕНА ДО ТОЙ САМОЙ ПАПКИ, КОТОРУЮ СКАЧАЛИ!\n' +
+            '-javaagent:\\Users\\ТУТ ИМЯ ЮЗЕРА\\ТУТ МЫ КАК РАЗ ДОЛЖНЫ ВСТАВИТЬ СВОЙ ПУТЬ ДО ПАПКИ\\jetbra\\ja-netfilter.jar=jetbrains  - ТУТ МЫ ВСТАВЛЯЕМ ТОТ ПУТЬ, КОТОРЫЙ КОПИРОВАЛИ В БУФЕР ОБМЕНА ДО ТОЙ САМОЙ ПАПКИ, КОТОРУЮ СКАЧАЛИ!\n' +
             'ПРИМЕР:\n' +
             '--add-opens=java.base/jdk.internal.org.objectweb.asm=ALL-UNNAMED--add-opens=java.base/jdk.internal.org.objectweb.asm.tree=ALL-UNNAMED\n' +
             '-javaagent:\\Users\\Alex\\wsActivate\\jetbra\\jetbra\\ja-netfilter.jar=jetbrains\n' +
